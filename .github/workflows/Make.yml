@@ -14,23 +14,23 @@ on:
       LIBRARY_BRANCH:
         description: 'LIBRARY_BRANCH'
         required: true
-        default: 'twrp-9.0'
+        default: 'twrp-10.0-deprecated'
       DEVICE_URL:
         description: 'DEVICE_URL'
         required: true
-        default: 'https://github.com/Xpsoted/android_device_qualcomm_qrd855-TWRP'
+        default: 'https://github.com/HK4567/android_device_lenvovo_TB-J706F.git'
       DEVICE_BRANCH:
         description: 'DEVICE_BRANCH'
         required: true
-        default: 'android-10'
+        default: 'Android-10'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/qualcomm/msmnile'
+        default: 'device/lenovo/J706F'
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'msmnile'
+        default: 'J706F'
 
 jobs:
   build:
