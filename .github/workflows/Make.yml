@@ -97,6 +97,17 @@ jobs:
         make clean
         make recoveryimage -j$(nproc --all)
 
+    - name: check file size
+      run: |
+        cd workspace
+        cd out
+        cd target
+        cd product
+        cd ${{ github.event.inputs.DEVICE_NAME }}
+        ls -lht
+        cd ../..
+        cd ../..
+        
     - name: Upload to Release
       uses: softprops/action-gh-release@v1
       with:
