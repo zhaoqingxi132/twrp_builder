@@ -32,6 +32,9 @@ on:
         required: true
         default: 'J706F'
 
+env:
+  TZ: Asia/Shanghai
+
 jobs:
   build:
     if: github.event.repository.owner.id == github.event.sender.id
