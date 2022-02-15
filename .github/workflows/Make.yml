@@ -18,7 +18,7 @@ on:
       DEVICE_URL:
         description: 'DEVICE_URL'
         required: true
-        default: 'https://github.com/HK4567/android_device_lenvovo_TB-J706F.git'
+        default: 'https://github.com/HK4567/android_device_lenvovo_TB-J706F-Twrp.git'
       DEVICE_BRANCH:
         description: 'DEVICE_BRANCH'
         required: true
@@ -109,17 +109,6 @@ jobs:
         lunch ${{ github.event.inputs.LIBRARY_NAME }}_${{ github.event.inputs.DEVICE_NAME }}-eng 
         make clean
         make recoveryimage -j$(nproc --all)
-
-    - name: check file size
-      run: |
-        cd workspace
-        cd out
-        cd target
-        cd product
-        cd ${{ github.event.inputs.DEVICE_NAME }}
-        ls -lht
-        cd ../..
-        cd ../..
         
     - name: Upload to Release
       uses: softprops/action-gh-release@v1
