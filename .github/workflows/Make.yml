@@ -18,19 +18,19 @@ on:
       DEVICE_URL:
         description: 'DEVICE_URL'
         required: true
-        default: 'https://github.com/HK4567/android_device_lenvovo_TB-J706F-Twrp.git'
+        default: 'https://github.com/bm0x/android_device_xiaomi_nabu'
       DEVICE_BRANCH:
         description: 'DEVICE_BRANCH'
         required: true
-        default: 'Android-11'
+        default: 'a11'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/lenovo/J706F'
+        default: 'device/xiaomi/nabu'
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'J706F'
+        default: 'nabu'
 
 env:
   TZ: Asia/Shanghai
